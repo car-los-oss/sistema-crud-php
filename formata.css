@@ -1,0 +1,308 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background: #f8f9fa;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 58px;
+    background: #fff;
+    border-bottom: 0.5px solid #e5e5e5;
+    display: flex;
+    align-items: center;
+    padding: 0 32px;
+    z-index: 100;
+}
+
+header h1 {
+    font-size: 16px;
+    font-weight: 500;
+    color: #1a1a1a;
+    letter-spacing: -0.3px;
+}
+
+nav {
+    position: fixed;
+    top: 58px;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    border-bottom: 0.5px solid #e5e5e5;
+    display: flex;
+    padding: 0 32px;
+    z-index: 99;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+nav button {
+    padding: 12px 20px;
+    font-size: 13px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    color: #888;
+    background: none;
+    border: none;
+    border-bottom: 2px solid transparent;
+    cursor: pointer;
+    transition: all 0.15s;
+}
+
+nav button:hover {
+    color: #1a1a1a;
+}
+
+main {
+    gap: 40px;
+    position: fixed;
+    top: 116px;
+    left: 0;
+    width: 100%;
+    height: calc(100vh - 174px);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 40px 32px;
+    overflow-y: auto;
+}
+
+.form-card {
+    background: #fff;
+    border-radius: 12px;
+    border: 0.5px solid #e5e5e5;
+    padding: 32px;
+    width: 100%;
+    max-width: 440px;
+}
+
+.form-card h2 {
+    font-size: 18px;
+    font-weight: 500;
+    color: #1a1a1a;
+    margin-bottom: 6px;
+}
+
+.form-card p.sub {
+    font-size: 13px;
+    color: #888;
+    margin-bottom: 28px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table tr td:first-child {
+    font-size: 12px;
+    font-weight: 500;
+    color: #888;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    padding: 0 0 6px 0;
+    padding-top: 18px;
+    white-space: nowrap;
+    width: 90px;
+}
+
+table tr:first-child td:first-child {
+    padding-top: 0;
+}
+
+table tr td:last-child {
+    padding-top: 18px;
+}
+
+table tr:first-child td:last-child {
+    padding-top: 0;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px 14px;
+    border: 0.5px solid #e5e5e5;
+    border-radius: 8px;
+    font-size: 14px;
+    font-family: 'Inter', sans-serif;
+    color: #1a1a1a;
+    background: #fff;
+    outline: none;
+    transition: border-color 0.15s, box-shadow 0.15s;
+}
+
+input[type="text"]:focus {
+    border-color: #534AB7;
+    box-shadow: 0 0 0 3px rgba(83, 74, 183, 0.1);
+}
+
+input[type="reset"] {
+    padding: 10px 20px;
+    background: transparent;
+    color: #888;
+    border: 0.5px solid #e5e5e5;
+    border-radius: 8px;
+    font-size: 14px;
+    font-family: 'Inter', sans-serif;
+    cursor: pointer;
+    transition: all 0.15s;
+    margin-top: 24px;
+}
+
+input[type="reset"]:hover {
+    background: #f8f9fa;
+}
+
+input[type="submit"] {
+    padding: 10px 28px;
+    background: #534AB7;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.15s;
+    margin-top: 24px;
+}
+
+input[type="submit"]:hover {
+    background: #3C3489;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 58px;
+    background: #fff;
+    border-top: 0.5px solid #e5e5e5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer h1 {
+    font-size: 12px;
+    font-weight: 400;
+    color: #888;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.verd {
+    color: #1D9E75;
+    font-size: 14px;
+    margin-top: 16px;
+}
+
+.verm {
+    color: #D85A30;
+    font-size: 14px;
+    margin-top: 16px;
+}
+/* === Cards de resultado === */
+.result-card {
+    background: #fff;
+    border: 0.5px solid #e5e5e5;
+    border-radius: 12px;
+    padding: 20px 24px;
+    margin-top: 32px;
+    max-width: 440px;
+
+}
+
+.result-card.danger {
+    border-color: #f0997b;
+    background: #fffaf9;
+}
+
+.result-badge {
+    display: inline-block;
+    background: #EEEDFE;
+    color: #534AB7;
+    font-size: 12px;
+    font-weight: 500;
+    padding: 4px 10px;
+    border-radius: 6px;
+    margin-bottom: 16px;
+}
+
+.result-badge.danger {
+    background: #FAECE7;
+    color: #993C1D;
+}
+
+.result-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 0;
+    border-bottom: 0.5px solid #f0f0f0;
+    gap: 16px;
+}
+
+.result-info:last-of-type {
+    border-bottom: none;
+}
+
+.result-label {
+    font-size: 12px;
+    font-weight: 500;
+    color: #888;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    white-space: nowrap;
+}
+
+.result-value {
+    font-size: 14px;
+    color: #1a1a1a;
+}
+
+.result-warn {
+    font-size: 13px;
+    color: #993C1D;
+    margin: 16px 0 12px;
+}
+
+/* === Mensagens de sucesso/erro === */
+.verd {
+    color: #1D9E75;
+    font-size: 14px;
+    margin-top: 16px;
+    padding: 12px 16px;
+    background: #E1F5EE;
+    border-radius: 8px;
+    max-width: 440px;
+}
+
+.verm {
+    color: #993C1D;
+    font-size: 14px;
+    margin-top: 16px;
+    padding: 12px 16px;
+    background: #FAECE7;
+    border-radius: 8px;
+    max-width: 440px;
+}
