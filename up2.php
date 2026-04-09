@@ -89,6 +89,6 @@
        
     ?>
     </main>
-    <footer><h1>Sistemas WEB - Carlos Eduardo</h1></footer>
+    <footer><h1>Carlos Eduardo de Andrade Gonçalves</h1></footer>
 </body>
 </html>
